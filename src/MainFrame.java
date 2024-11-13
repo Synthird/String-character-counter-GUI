@@ -26,6 +26,7 @@ public class MainFrame extends JFrame implements ActionListener {
         textField = new JTextField();
         textField.setFont(new Font("Century", Font.PLAIN, 14));
         textField.setPreferredSize(new Dimension(230, 26));
+        textField.addActionListener(this);
         this.add(textField);
 
         this.setTitle("String character counter");
@@ -39,7 +40,7 @@ public class MainFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == countButton) {
+        if (e.getSource() == countButton || e.getSource() == textField) {
             new CharacterCounter(textField.getText());
         }
     }
