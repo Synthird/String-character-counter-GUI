@@ -4,6 +4,8 @@ A GUI that counts how many characters are in a string.
 
 # Installation
 
+You can download a version in the [releases page](https://github.com/Synthird/String-character-counter-GUI/releases).
+
 ## Opening the exe in the zip file (Windows only)
 
 1. Download and unzip the zip file
