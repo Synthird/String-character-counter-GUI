@@ -2,11 +2,11 @@
 
 A GUI that counts how many characters are in a string.
 
-# Download and installation
+## Download and installation
 
 You can download a version in the [releases page](https://github.com/Synthird/String-character-counter-GUI/releases).
 
-## Opening the exe in the zip file (Windows only)
+### Opening the exe in the zip file (Windows only)
 
 1. Download and unzip the zip file
 3. Open the exe file
@@ -14,7 +14,7 @@ You can download a version in the [releases page](https://github.com/Synthird/St
     - Click "More info"
     - Click "Run anyway"
 
-## Opening the jar file
+### Opening the jar file
 
 You need an openJDK to open the jar file. Here are a couple ones to choose:
 
