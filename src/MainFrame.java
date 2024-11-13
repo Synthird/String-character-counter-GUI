@@ -40,7 +40,7 @@ public class MainFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == countButton) {
-            new CharacterCounter(textField.getText().length());
+            new CharacterCounter(textField.getText());
         }
     }
 }
