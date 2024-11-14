@@ -2,7 +2,7 @@
 
 A GUI that counts how many characters are in a string.
 
-## Download/installation
+## Download/Installation
 
 You can download a version in the [releases page](https://github.com/Synthird/String-character-counter-GUI/releases).
 
