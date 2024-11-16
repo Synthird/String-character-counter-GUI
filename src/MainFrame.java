@@ -6,12 +6,17 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class MainFrame extends JFrame implements ActionListener {
+    private static int paneType = JOptionPane.PLAIN_MESSAGE;
 
     JButton countButton;
     JTextField textField;
+
+    String enteredText;
+    int characters;
 
     public MainFrame() {
 
@@ -40,7 +45,14 @@ public class MainFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == countButton || e.getSource() == textField) {
-            new CharacterCounter(textField.getText());
+            enteredText = textField.getText();
+            characters = enteredText.length();
+
+            if (characters == 1) {
+                JOptionPane.showMessageDialog(null, "1 character", enteredText, paneType);
+            } else {
+                JOptionPane.showMessageDialog(null, String.format("%s characters", characters), enteredText, paneType);
+            }
         }
     }
 }
