@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class MainFrame extends JFrame implements ActionListener {
-    private static int paneType = JOptionPane.PLAIN_MESSAGE;
+    int paneType = JOptionPane.PLAIN_MESSAGE;
 
     JButton countButton;
     JTextField textField;
