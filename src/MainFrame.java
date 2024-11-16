@@ -16,8 +16,7 @@ public class MainFrame extends JFrame implements ActionListener {
     public MainFrame() {
 
         // Count button
-        countButton = new JButton();
-        countButton.setText("Count");
+        countButton = new JButton("Count");
         countButton.setFocusable(false);
         countButton.addActionListener(this);
         this.add(countButton);
