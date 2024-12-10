@@ -33,6 +33,7 @@ public class MainFrame extends JFrame implements ActionListener {
         textField.addActionListener(this);
         this.add(textField);
 
+        // Window set up
         this.setTitle("String character counter");
         this.setSize(330, 74);
         this.setLocationRelativeTo(null);
